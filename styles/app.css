@@ -1,0 +1,44 @@
+
+/* General table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+tr {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    padding: .35em;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    thead {
+        display: none;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+    td:last-child {
+        border-bottom: 0;
+    }
+}
